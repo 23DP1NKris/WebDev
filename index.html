@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/index.css">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <div class="logo">WebDev</div>
+        <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home">Sākums</a></li>
+                <li><a href="#home">Par mums</a></li>
+                <li class="dropdown">
+                    <a href="#about">Pakalpojumi <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#webdev">Web izstrāde</a></li>
+                        <li><a href="#uiux">UI/UX dizains</a></li>
+                        <li><a href="#marketing">Digitālais mārketings</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Kontakti</a></li>
+            </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero" id="home">
+        <h1>Laipni lūdzam WebDev!</h1>
+        <p>Šī ir mūsu lapa, kurā varat atrast visus mūsu produktus. Mēs vienmēr esam atsaucīgi uz visām Jūsu prasībām. Izpētiet mūsu piedāvājumus.</p>
+        <img src="src/images/laptop-coding.jpg" alt="Vietnes galvenais attēls" class="hero-image">
+    </section>
+
+    <div class="main-layout">
+        <div>
+            <section class="cards-section" id="about">
+                <h2>Mūsu pakalpojumi</h2>
+                <div class="cards-container">
+                    <div class="card" id="webdev">
+                        <img src="src/images/web-development.jpg" alt="Web izstrāde" class="card-image">
+                        <div class="card-content">
+                            <h3>Web izstrāde</h3>
+                            <p>Mēs veidojam modernas un ātras tīmekļa vietnes, kas piesaista klientus un palielina pārdošanas apjomus.</p>
+                            <a href="#" class="card-button">Uzzināt vairāk</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="uiux">
+                        <img src="src/images/ui-design.jpg" alt="UI/UX dizains" class="card-image">
+                        <div class="card-content">
+                            <h3>UI/UX dizains</h3>
+                            <p>Mēs radām lietotājam draudzīgus un vizuāli pievilcīgus interfeisus, kas uzlabo lietotāju pieredzi.</p>
+                            <a href="#" class="card-button">Uzzināt vairāk</a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="marketing">
+                        <img src="src/images/digital-marketing.jpg" alt="Digitālais mārketings" class="card-image">
+                        <div class="card-content">
+                            <h3>Digitālais mārketings</h3>
+                            <p>Mēs palīdzam jums sasniegt vairāk klientu un palielināt atpazīstamību digitālajā vidē.</p>
+                            <a href="#" class="card-button">Uzzināt vairāk</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside>
+            <h2>Saistītie raksti</h2>
+            <ul class="related-articles">
+                <li><a href="#">Kā izveidot modernu tīmekļa vietni 2025. gadā</a></li>
+                <li><a href="#">Top 5 tendences UI dizainā</a></li>
+                <li><a href="#">Kā palielināt konversiju savā mājaslapā</a></li>
+                <li><a href="#">Kāpēc jums ir vajadzīga mobilā lietotne jūsu biznesam</a></li>
+                <li><a href="#">Labākās prakse sociālo mediju mārketingā</a></li>
+            </ul>
+        </aside>
+    </div>
+</main>
+
+<footer id="contact">
+    <div class="container footer-content">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">&copy 2025 Nils Roberts Krištopāns.</p>
+    </div>
+</footer>
+
+<script src="scripts/index.js"></script>
+</body>
+</html>
