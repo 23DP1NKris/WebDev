@@ -19,10 +19,3 @@ burger.addEventListener('click', () => {
     navMenu.classList.toggle('active')
     themeToggle.style.display = navMenu.classList.contains('active') ? 'block' : 'none'
 })
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active')
-        themeToggle.style.display = 'none'
-    })
-})

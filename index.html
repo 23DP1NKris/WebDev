@@ -77,6 +77,22 @@
                     </div>
                 </div>
             </section>
+
+            <section class="previous-work">
+                <div class="previous-work-container">
+                    <h1>Mūsu iepriekšējie projekti</h1>
+
+                    <ul>
+                        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.x.com" target="_blank">X</a></li>
+                        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.github.com" target="_blank">Github</a></li>
+                        <li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
         <aside>
@@ -90,6 +106,24 @@
             </ul>
         </aside>
     </div>
+
+    <section class="card-list-section">
+        <div class="search-and-buttons">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <input type="text" id="searchInput" placeholder="Nosaukums">
+                </div>
+                <button id="searchButton">Meklēt</button>
+            </div>
+
+            <div class="sort-buttons">
+                <button id="defaultSort">Bez kārtošanas</button>
+                <button id="azSort">A - Z</button>
+                <button id="zaSort">Z - A</button>
+            </div>
+        </div>
+        <div id="cardListContainer"></div>
+    </section>
 </main>
 
 <footer id="contact">
@@ -105,5 +139,6 @@
 </footer>
 
 <script src="scripts/index.js"></script>
+<script src="scripts/cards.js"></script>
 </body>
 </html>
