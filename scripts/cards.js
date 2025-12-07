@@ -69,6 +69,7 @@ function sortZA() {
     renderCards(filteredSortedCards)
 }
 
+searchInput.addEventListener("input", searchCards)
 searchBtn.addEventListener("click", searchCards)
 defaultSort.addEventListener("click", sortDefault)
 azSort.addEventListener("click", sortAZ)

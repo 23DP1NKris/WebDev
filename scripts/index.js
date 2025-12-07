@@ -2,7 +2,6 @@ const themeToggle = document.getElementById('themeToggle')
 const themeIcon = themeToggle.querySelector('i')
 const burger = document.getElementById('burger')
 const navMenu = document.getElementById('navMenu')
-const navLinks = navMenu.querySelectorAll('a')
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode')

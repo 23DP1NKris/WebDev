@@ -124,6 +124,38 @@
         </div>
         <div id="cardListContainer"></div>
     </section>
+
+    <section class="contact-form-section" id="contactForm">
+        <div class="container">
+            <h2>Sazinies ar mums</h2>
+            <form id="contactFormElement" novalidate>
+                <div class="form-group">
+                    <label for="name">Vārds</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-pasts</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ziņa</label>
+                    <textarea id="message" name="message"></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+
+                <button type="submit" class="submit-btn">Nosūtīt</button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <p>Jūsu ziņojums ir veiksmīgi nosūtīts.</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer id="contact">
@@ -140,5 +172,6 @@
 
 <script src="scripts/index.js"></script>
 <script src="scripts/cards.js"></script>
+<script src="scripts/contact_form.js"></script>
 </body>
 </html>
